@@ -29,7 +29,7 @@ def get_gmail_service():
                 }
             }, SCOPES)
 
-            creds = flow.run_console()
+            creds = flow.run_local_server(port=0)
             with open("token.pkl", "wb") as token:
                 pickle.dump(creds, token)
         except Exception as e:
