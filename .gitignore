@@ -13,3 +13,8 @@ token.pkl
 client_secret.json"token.pkl" 
 ".env" 
 "client_secret.json" 
+client_secret
+secret.toml
+client_secret.json
+"client_secret.json" 
+"token.pkl"
