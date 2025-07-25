@@ -18,3 +18,4 @@ secret.toml
 client_secret.json
 "client_secret.json" 
 "token.pkl"
+"sent_email.json"
