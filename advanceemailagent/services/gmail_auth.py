@@ -127,7 +127,7 @@ def get_gmail_service():
                 client_config = json.loads(os.getenv("GCP_CLIENT_SECRET"))
 
             flow = InstalledAppFlow.from_client_config(client_config, SCOPES)
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_console()  
 
             # Save creds locally for reuse (only works locally)
             with open("token.json", "w") as token:
@@ -143,3 +143,4 @@ def get_gmail_service():
     except Exception as e:
         st.error(f"⚠️ Gmail Service failed: {e}")
         return None
+
